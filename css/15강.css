@@ -81,9 +81,36 @@ button {
     border-radius: 5px;
     border: none;
     background-color: rgb(74, 101, 120);
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: rgb(46, 46, 87);
+}
+
+button:focus {
+    background-color: antiquewhite;
+}
+
+button:active {
+    background-color: aquamarine;
+}
+
 
 span {
     color: white;
 
+}
+
+
+.custom-link {
+    text-decoration: none;
+}
+
+.custom-link:link {
+    color: antiquewhite;
+}
+
+.custom-link:visited {
+    color: red;
 }

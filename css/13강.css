@@ -20,6 +20,10 @@ input {
     padding: 10px;
 }
 
+input[type=email]:focus {
+    background-color: #eee;
+}
+
 
 .main-container {
     padding: 30px;
