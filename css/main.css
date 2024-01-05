@@ -1,83 +1,74 @@
-.left {
-    width: 80%;
-    height: 150px;
-    background-color: green;
-    float: left;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/* @font-face {
+    font-family: 'LilitaOne-Regular';
+    src: url(..\font\LilitaOne-Regular.ttf)
+} */
 
-.right-img {
-    width: 20%;
-    height: 150px;
-    background-color: blue;
-    float: left;
-}
-
-.profile {
-    width: 100%;
-    height: 30%;
-    background-color: white;
-    float: left;
-}
-
-.profile-detail {
-    float: left;
-}
-
-.profile h4 {
-    font-size: 13px;
-    margin-top: 4px;
-    margin-bottom: 1px;
-    padding-left: 10px;
-}
-
-.profile p {
-    font-size: 10px;
-    color: gray;
-    padding-left: 10px;
+body {
     margin: 0px;
+    font-family: 'Lilita One', sans-serif;
+
+}
+
+div,
+input,
+textarea,
+form {
+    box-sizing: border-box;
 }
 
 
-.h1 {
-    width: 100%;
-    height: 15%;
-    font-size: 15px;
-    font-weight: 700;
-    background-color: white;
-    float: left;
+p {
+    margin-bottom: 2px;
 }
 
-
-
-.description {
-    width: 100%;
-    height: 40%;
-    font-size: 13px;
-    background: white;
-    float: left;
-}
-
-.icon {
-    width: 100%;
-    height: 15%;
-    font-size: 10px;
-    background: white;
-    float: left;
-}
-
-.navbar>li {
-    display: inline-block;
-    width: 60px;
-    background-color: #eee;
+input {
     padding: 10px;
-    border-radius: 5px;
 }
 
-.navbar a {
-    font-size: 16px;
-    text-decoration: none;
+input[type=email]:focus {
+    background-color: #eee;
 }
 
-.content {
-    text-align: center;
+
+.main-container {
+    padding: 30px;
+    margin: auto;
+    width: 100%;
+    height: 700px;
+    /* background-color: #eee; */
+}
+
+.first {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    /* margin-right: 13px; */
+
+}
+
+.last {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.message {
+    clear: both;
+    position: relative;
+    top: 8px;
+    padding: 10px;
+
+}
+
+.send-button {
+    background-color: rgb(235, 190, 66);
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px;
+    width: 90px;
+    float: right;
+    margin: 10px;
 }
