@@ -1,96 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 /* @font-face {
     font-family: 'LilitaOne-Regular';
     src: url(..\font\LilitaOne-Regular.ttf)
 } */
 
 body {
-    margin: 0px;
-    font-family: 'Lilita One', sans-serif;
-
+  margin: 0px;
+  font-family: "Lilita One", sans-serif;
 }
 
 div,
 input,
 textarea,
 form {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 p {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 input {
-    padding: 10px;
+  padding: 10px;
 }
 
-input[type=email]:focus {
-    background-color: #eee;
+input[type="email"]:focus {
+  background-color: #eee;
 }
-
 
 .main-container {
-    padding: 30px;
-    margin: auto;
-    width: 100%;
-    height: 700px;
-    /* background-color: #eee; */
+  padding: 30px;
+  margin: auto;
+  width: 100%;
+  height: 700px;
+  /* background-color: #eee; */
 }
 
 .first {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    /* margin-right: 13px; */
-
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* margin-right: 13px; */
 }
 
 .last {
-    float: left;
-    width: 50%;
-    padding: 10px;
+  float: left;
+  width: 50%;
+  padding: 10px;
 }
 
 .message {
-    clear: both;
-    position: relative;
-    top: 8px;
-    padding: 10px;
-
+  clear: both;
+  position: relative;
+  top: 8px;
+  padding: 10px;
 }
 
 .send-button {
-    background-color: rgb(235, 190, 66);
-    border: none;
-    color: white;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 5px;
-    width: 90px;
-    float: right;
-    margin: 10px;
+  background-color: rgb(235, 190, 66);
+  border: none;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px;
+  width: 90px;
+  float: right;
+  margin: 10px;
 }
 
 .flex-container {
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: flex-end;
-    /* flex-wrap: wrap; */
-    height: 100px;
-    align-items: center;
-
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  /* flex-wrap: wrap; */
+  height: 100px;
+  align-items: center;
 }
 
 .flex-item {
-    width: 80px;
-    height: 80px;
-    background-color: rgb(200, 120, 120);
+  width: 80px;
+  height: 80px;
+  background-color: rgb(200, 120, 120);
 }
 
 .AppBar {
-    margin: 18px;
-    font-size: 40px;
-    color: white;
+  margin: 18px;
+  font-size: 40px;
+  color: white;
+}
+
+.test {
+  width: 100vw;
+  height: 50vh;
+  background-color: gray;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.menu-sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.menu-item {
+  /* background-color: grey; */
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-container {
+    flex-direction: column; /* 세로정렬 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-sort {
+    flex-direction: column; /* 세로정렬 */
+  }
 }
