@@ -128,6 +128,59 @@ input[type="email"]:focus {
   margin-top: 40px;
 }
 
+.shop-bg {
+  background-color: gray;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  margin: 15px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.shop-item h3 {
+  margin: 15px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  color: white;
+}
+
+.shop-item p {
+  margin-left: 10px;
+  margin-top: 3px;
+  font-size: 16px;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1.3s;
+  transform: translateY(50px);
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+.shop-item:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 1200px) {
   .menu-container {
     flex-direction: column; /* 세로정렬 */
