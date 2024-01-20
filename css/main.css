@@ -142,6 +142,7 @@ input[type="email"]:focus {
 .shop-item {
   width: 33%;
   margin: 15px;
+  overflow: hidden;
 }
 
 .shop-item img {
@@ -170,7 +171,6 @@ input[type="email"]:focus {
   height: 50%;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  overflow: hidden;
   transition: all 1.3s;
   transform: translateY(50px);
   /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
