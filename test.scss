@@ -1,86 +1,83 @@
 @use "_reset";
-%btn {
-  // 임시 클래스명 : 단독으로 컴파일되지 않음
-  width: 100px;
-  height: 100px;
-  padding: 20px;
+
+ul {
+  list-style-type: none;
 }
 
-%container {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
+p {
+  margin: 0px;
 }
 
-.btn-green {
-  @extend %btn;
-  color: green;
-}
-
-.btn-red {
-  @extend %btn;
-  color: red;
-}
-
-.btn-blue {
-  @extend %btn;
-  color: blue;
-}
-
-.green-container {
-  @extend %container;
-  background-color: green;
-}
-
-.blue-container {
-  @extend %container;
-  background-color: blue;
-}
-
-.red-container {
-  @extend %container;
-  background-color: red;
-}
-
-$main_color: #2a4cb2;
-$sub_color: #eee;
-$main_size: 16px;
-
-.background {
-  background-color: $main_color;
-  //   font-size: ($main_size / 2);
-}
-
-.box {
-  color: #2a4cb2;
-  //   font-size: $main_color + 2px;
-}
-
-.main-bg {
-  h4 {
-    font-size: 16px;
-  }
-
-  button {
-    padding: 2px;
+li {
+  div {
+    border: 1px solid #eee;
+    padding: 10px;
   }
 }
 
-@mixin 폰트스타일($구멍, $구멍2) {
-  font-size: $구멍;
-  letter-spacing: $구멍2;
+.active {
+  background-color: rgb(86, 86, 239);
+  color: aliceblue;
 }
 
-h2 {
-  @include 폰트스타일(40px, 1px);
-  color: reset.$메인칼라;
+.alert {
+  height: 100%;
+  width: 90vw;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
-h3 {
-  @include 폰트스타일(30px, 2px);
+.alert-green {
+  @extend .alert;
+  background-color: rgb(208, 232, 208);
+  span {
+    font-weight: bold;
+    color: rgb(90, 114, 82);
+  }
+  p {
+    color: rgb(77, 120, 77);
+  }
 }
 
-h4 {
-  font-size: 10px;
-  letter-spacing: -1px;
+.alert-blue {
+  @extend .alert;
+  background-color: rgb(195, 216, 238);
+  span {
+    font-weight: bold;
+    color: rgb(85, 99, 124);
+  }
+  p {
+    color: rgb(86, 121, 149);
+  }
+}
+
+.alert-red {
+  @extend .alert;
+  background-color: rgb(245, 212, 212);
+  span {
+    font-weight: bold;
+    color: rgb(141, 98, 90);
+  }
+  p {
+    color: rgb(193, 121, 113);
+  }
+}
+
+@mixin column($rate) {
+  float: left;
+  width: $rate;
+  padding: 15px;
+}
+
+.row .col-6 {
+  @include column(50%);
+}
+
+.row .col-4 {
+  @include column(33.3333%);
+}
+
+.row .col-3 {
+  @include column(25%);
 }
