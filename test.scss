@@ -1,0 +1,66 @@
+%btn {
+  // 임시 클래스명 : 단독으로 컴파일되지 않음
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+%container {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.btn-green {
+  @extend %btn;
+  color: green;
+}
+
+.btn-red {
+  @extend %btn;
+  color: red;
+}
+
+.btn-blue {
+  @extend %btn;
+  color: blue;
+}
+
+.green-container {
+  @extend %container;
+  background-color: green;
+}
+
+.blue-container {
+  @extend %container;
+  background-color: blue;
+}
+
+.red-container {
+  @extend %container;
+  background-color: red;
+}
+
+$main_color: #2a4cb2;
+$sub_color: #eee;
+$main_size: 16px;
+
+.background {
+  background-color: $main_color;
+  //   font-size: ($main_size / 2);
+}
+
+.box {
+  color: #2a4cb2;
+  //   font-size: $main_color + 2px;
+}
+
+.main-bg {
+  h4 {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 2px;
+  }
+}

@@ -181,6 +181,11 @@ input[type="email"]:focus {
   transform: translateY(0);
 }
 
+input[type="file"]::webkit-file-upload-button {
+  background-color: skyblue;
+  border: none;
+}
+
 @media screen and (max-width: 1200px) {
   .menu-container {
     flex-direction: column; /* 세로정렬 */
