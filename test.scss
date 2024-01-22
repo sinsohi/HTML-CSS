@@ -1,3 +1,4 @@
+@use "_reset";
 %btn {
   // 임시 클래스명 : 단독으로 컴파일되지 않음
   width: 100px;
@@ -63,4 +64,23 @@ $main_size: 16px;
   button {
     padding: 2px;
   }
+}
+
+@mixin 폰트스타일($구멍, $구멍2) {
+  font-size: $구멍;
+  letter-spacing: $구멍2;
+}
+
+h2 {
+  @include 폰트스타일(40px, 1px);
+  color: reset.$메인칼라;
+}
+
+h3 {
+  @include 폰트스타일(30px, 2px);
+}
+
+h4 {
+  font-size: 10px;
+  letter-spacing: -1px;
 }
