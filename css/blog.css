@@ -165,6 +165,10 @@ a {
   font-size: 30px;
 }
 
+.ani-text {
+  transform: rotate(60deg);
+}
+
 @media screen and (max-width: 1200px) {
   .main-title {
     font-size: 30px;
